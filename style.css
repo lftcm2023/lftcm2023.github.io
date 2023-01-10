@@ -262,3 +262,37 @@ footer {
     display: none;
   }
 }
+
+
+/* schedule */
+
+.schedule {
+  overflow-x: auto;
+  width: 100%;
+}
+
+.schedule table {
+  margin: auto;
+}
+
+.schedule th, .schedule td {
+  padding: var(--size-200);
+  background: var(--clr-neutral-200);
+}
+
+.schedule tr>th:first-child,.schedule tr>td:first-child {
+  position: sticky;
+  left: 0;
+}
+/*
+.schedule thead th {
+  background: white;
+}
+
+.schedule tr td:nth-child(odd), .schedule tr th:nth-child(odd) {
+  background: white;
+}
+
+.schedule tr td:nth-child(even), .schedule tr th:nth-child(even) {
+  background: var(--clr-neutral-200);
+} */
