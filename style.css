@@ -1,0 +1,264 @@
+/* variables */
+
+:root {
+  --clr-primary: hsl(203, 39%, 57%);
+  --clr-accent-1: hsl(0, 100%, 24%);
+  --clr-accent-2: hsl(356, 83%, 41%);
+  --clr-neutral-200: hsl(229, 38%, 94%);
+  --clr-neutral-800: hsl(201, 100%, 14%);
+
+  --ff-primary: 'Be Vietnam Pro', sans-serif;
+  --ff-body: var(--ff-primary);
+  --ff-heading: var(--ff-primary);
+
+  --fw-regular: 400;
+  --fw-bold: 700;
+
+  --fs-body: 1rem;
+  --fs-primary-heading: 3.5rem;
+  --fs-secondary-heading: 2.5rem;
+  --fs-nav: 0.875rem;
+  --fs-button: 1.275rem;
+
+  --size-50: 0.25rem;
+  --size-100: 1rem;
+  --size-200: 1.25rem;
+  --size-300: 1.5rem;
+  --size-400: 2rem;
+  --size-500: 2.5rem;
+  --size-600: 3rem;
+  --size-700: 3.5rem;
+  --size-800: 4rem;
+  --size-900: 5rem;
+}
+
+@media (min-width: 50em) {
+  :root {
+    --fs-body: 1.2rem;
+    --fs-primary-heading: 4rem;
+    --fs-secondary-heading: 2.5rem;
+    --fs-nav: 1rem;
+    --fs-button: 1rem;
+  }
+}
+
+/* Reset: https://piccalil.li/blog/a-modern-css-reset/ */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* utility */
+
+.visually-hidden {
+  position: absolute;
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0,0,0,0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+.container {
+  --max-width: 1110px;
+  --padding: 1rem;
+
+  width: min(var(--max-width), 100% - var(--padding));
+  margin-inline: auto;
+}
+
+.even-columns {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 50em) {
+  .even-columns {
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+  }
+}
+
+/* general styling */
+
+body {
+  background: linear-gradient(var(--clr-neutral-200) 0%, white 50em);
+  font-size: var(--fs-body);
+  font-family: var(--ff-body);
+  color: var(--clr-neutral-800);
+}
+
+h1 {
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-primary-heading);
+  color: var(--clr-accent-2);
+  line-height: 1.1;
+}
+
+h2 {
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-secondary-heading);
+  color: var(--clr-accent-2);
+  line-height: 1.1;
+}
+
+section {
+  margin-top: var(--size-800);
+}
+
+strong {
+  font-weight: var(--fw-bold);
+}
+
+:where(.flow :not(:first-child)) {
+  margin-top: var(--size-200);
+}
+
+footer {
+  margin-top: var(--size-800);
+  height: var(--size-200);
+  background-color: var(--clr-neutral-800);
+}
+
+/* navigation */
+
+.primary-header {
+  background: var(--clr-neutral-800);
+}
+
+.logo {
+  color: var(--clr-neutral-800);
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: right;
+  align-items: right;
+}
+
+.mobile-nav-toggle {
+  display: none;
+}
+
+.nav-list {
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  font-size: var(--fs-nav);
+  font-weight: var(--fw-bold);
+  gap: clamp(var(--size-500), 5vw, var(--size-700));
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-list a:hover,
+.nav-list a:focus {
+  color: var(--clr-accent-1);
+}
+
+@media (max-width: 50em) {
+  .primary-navigation {
+    display: none;
+    position: absolute;
+    padding: var(--size-700);
+    inset: var(--size-900) var(--size-400) auto;
+    max-width: 35rem;
+    margin-inline: auto;
+    border-radius: var(--size-50);
+    box-shadow: 0 0 .5em rgb(0,0,0,.15), 0 0 0 100vmax rgb(0,0,0,.15);
+    background: var(--clr-neutral-800);
+  }
+
+  .nav-list {
+    display: grid;
+    gap: var(--size-600);
+    text-align: center;
+  }
+
+  .primary-navigation[data-visible] {
+    display: block;
+  }
+
+  .mobile-nav-toggle {
+    display: block;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    padding: 0.5em;
+  }
+  
+  .mobile-nav-toggle .icon-hamburger {
+    width: 0.8em;
+    filter: invert(100%) 
+  }
+  
+  .mobile-nav-toggle .icon-close {
+    display: none;
+  }
+}
