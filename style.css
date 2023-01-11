@@ -170,7 +170,7 @@ strong {
   font-weight: var(--fw-bold);
 }
 
-:where(.flow :not(:first-child)) {
+:where(.flow>:not(:first-child)) {
   margin-top: var(--size-200);
 }
 
@@ -219,7 +219,7 @@ footer {
 
 .nav-list a:hover,
 .nav-list a:focus {
-  color: var(--clr-accent-1);
+  color: var(--clr-neutral-200);
 }
 
 @media (max-width: 50em) {
