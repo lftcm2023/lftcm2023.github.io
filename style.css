@@ -219,6 +219,7 @@ footer {
   font-size: var(--fs-nav);
   font-weight: var(--fw-bold);
   gap: clamp(var(--size-500), 5vw, var(--size-700));
+  line-height:3;
 }
 
 .nav-list a {
