@@ -134,6 +134,10 @@ picture {
   gap: 1rem;
 }
 
+.shaded-background {
+  background: var(--clr-neutral-200);
+}
+
 @media (min-width: 50em) {
   .even-columns {
     grid-auto-flow: column;
@@ -186,7 +190,6 @@ strong {
 }
 
 footer {
-  margin-top: var(--size-800);
   height: var(--size-200);
   background-color: var(--clr-neutral-800);
 }
