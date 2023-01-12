@@ -1,7 +1,7 @@
 /* variables */
 
 :root {
-  --clr-primary: hsl(203, 39%, 57%);
+    --clr-primary:hsl(211, 100%, 40%); /* hsl(203, 39%, 57%)*/
   --clr-accent-1: hsl(0, 100%, 24%);
   --clr-accent-2: hsl(356, 83%, 41%);
   --clr-neutral-200: hsl(229, 38%, 94%);
@@ -78,7 +78,9 @@ body {
 
 /* A elements that don't have a class get default styles */
 a:not([class]) {
-  text-decoration-skip-ink: auto;
+    text-decoration-skip-ink: auto;
+    text-decoration:none;
+    color: var(--clr-primary);
 }
 
 /* Make images easier to work with */
@@ -160,6 +162,15 @@ h2 {
   font-size: var(--fs-secondary-heading);
   color: var(--clr-accent-2);
   line-height: 1.1;
+  margin-bottom:0.2em;
+}
+
+p.h2
+{
+  font-weight: var(--fw-bold);
+  color: var(--clr-accent-2);
+  line-height: 1.1;
+  margin-bottom:0.5em;
 }
 
 section {
