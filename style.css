@@ -1,7 +1,8 @@
 /* variables */
 
 :root {
-    --clr-primary:hsl(211, 100%, 40%); /* hsl(203, 39%, 57%)*/
+  --clr-primary:hsl(211, 100%, 40%);
+  --clr-primary-transparent:hsla(211, 100%, 40%, 0.2);
   --clr-accent-1: hsl(0, 100%, 24%);
   --clr-accent-2: hsl(356, 83%, 41%);
   --clr-neutral-200: hsl(229, 38%, 94%);
@@ -74,7 +75,8 @@ body {
 /* A elements that don't have a class get default styles */
 a:not([class]) {
     text-decoration-skip-ink: auto;
-    text-decoration-style: dotted;
+    text-decoration-style: underline;
+    text-decoration-color: var(--clr-primary-transparent);
     color: var(--clr-primary);
 }
 
@@ -164,6 +166,13 @@ h2 {
   margin-bottom:0.2em;
 }
 
+h3 {
+  font-weight: var(--fw-bold);
+  color: var(--clr-accent-2);
+  line-height: 1.1;
+  margin-bottom:0.2em;
+}
+
 p.h2
 {
   font-weight: var(--fw-bold);
@@ -187,6 +196,11 @@ strong {
 footer {
   height: var(--size-200);
   background-color: var(--clr-neutral-800);
+}
+
+ul {
+  margin-left: 1.5em;
+  margin-top: 0;
 }
 
 /* navigation */
