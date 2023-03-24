@@ -87,6 +87,11 @@ picture {
   display: block;
 }
 
+img.Kaffee {
+    display:inline;
+    height:1em;
+}
+
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
