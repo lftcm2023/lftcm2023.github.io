@@ -8,6 +8,10 @@
   --clr-neutral-200: hsl(229, 38%, 94%);
   --clr-neutral-800: hsl(201, 100%, 14%);
 
+  --clr-marker-1:hsla(129, 36%, 70%, 0.2);
+  --clr-marker-2:hsla(356, 83%, 41%, 0.096);
+  --clr-marker-3:hsla(51, 83%, 41%, 0.1);
+
   --ff-primary: 'Be Vietnam Pro', sans-serif;
   --ff-body: var(--ff-primary);
   --ff-heading: var(--ff-primary);
@@ -295,33 +299,45 @@ ul {
 
 /* schedule */
 
-.schedule {
-  overflow-x: auto;
+.schedule table {
   width: 100%;
 }
 
-.schedule table {
-  margin: auto;
-}
-
-.schedule th, .schedule td {
-  padding: var(--size-200);
+.schedule tr {
   background: var(--clr-neutral-200);
 }
 
-.schedule tr>th:first-child,.schedule tr>td:first-child {
-  position: sticky;
-  left: 0;
-}
-/*
-.schedule thead th {
-  background: white;
+.schedule thead {
+  font-weight: bold;
 }
 
-.schedule tr td:nth-child(odd), .schedule tr th:nth-child(odd) {
-  background: white;
+.schedule tr td, .schedule tr th {
+  padding: var(--size-100);
 }
 
-.schedule tr td:nth-child(even), .schedule tr th:nth-child(even) {
+.schedule th {
+  white-space: nowrap;
+  width: 1px;
+}
+
+.schedule tr.break {
   background: var(--clr-neutral-200);
-} */
+}
+
+.schedule tr.break td {
+  padding: var(--size-50) var(--size-100);
+}
+
+
+.schedule tr.lecture {
+  background: var(--clr-marker-1);
+}
+
+.schedule tr.practice {
+  background: var(--clr-marker-3);
+}
+
+.schedule tr.colloquium {
+  background: var(--clr-marker-2);
+}
+
