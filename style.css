@@ -341,3 +341,9 @@ ul {
   background: var(--clr-marker-2);
 }
 
+.schedule .colloquium .title {
+  font-weight: bold;
+}
+.schedule .abstract {
+  font-size: 90%;
+}
