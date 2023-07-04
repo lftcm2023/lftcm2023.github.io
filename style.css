@@ -321,7 +321,47 @@ ul {
   width: 1px;
 }
 
-.schedule tr.break {
+
+/* compact schedule */
+
+.compact-schedule {
+  overflow-x: auto;
+  width: 100%;
+}
+
+.compact-schedule table {
+    margin: auto;
+    border-spacing:0;
+}
+
+.compact-schedule th, .compact-schedule td {
+    background: var(--clr-neutral-200);
+    padding: var(--size-200);
+    border: 1px white solid;
+}
+
+.compact-schedule th {
+  background: var(--clr-neutral-200);
+}
+
+
+.compact-schedule tr>th:first-child,.compact-schedule tr>td:first-child {
+  position: sticky;
+  left: 0;
+}
+
+/*.compact-schedule thead th {
+  background: white;
+}*/
+
+.compact-schedule tr td:empty {
+  background: none;
+}
+
+
+/* schedules : individual rows & cells */
+
+.schedule tr.break, td.break{
   background: var(--clr-neutral-200);
 }
 
@@ -329,8 +369,7 @@ ul {
   padding: var(--size-50) var(--size-100);
 }
 
-
-.schedule tr.lecture {
+.schedule tr.lecture, td.lecture {
   background: var(--clr-marker-1);
 }
 
@@ -338,7 +377,7 @@ ul {
   background: var(--clr-marker-3);
 }
 
-.schedule tr.colloquium {
+.schedule tr.colloquium, td.colloquium {
   background: var(--clr-marker-2);
 }
 
@@ -360,40 +399,6 @@ ul {
 
 
 
-/* compact schedule */
-
-.compact-schedule {
-  overflow-x: auto;
-  width: 100%;
-}
-
-.compact-schedule table {
-    margin: auto;
-    border-spacing:0;
-}
-
-.compact-schedule th, .compact-schedule td {
-  padding: var(--size-200);
-  background: var(--clr-neutral-200);
-  border: 1px white solid;
-}
-
-.compact-schedule tr>th:first-child,.compact-schedule tr>td:first-child {
-  position: sticky;
-  left: 0;
-}
-
-.compact-schedule thead th {
-  background: white;
-}
-
-.compact-schedule tr td, .compact-schedule tr th{
-  background: var(--clr-neutral-200);
-}
-
-.compact-schedule tr td:empty {
-  background: none;
-}
 
 
 /* buttons */
