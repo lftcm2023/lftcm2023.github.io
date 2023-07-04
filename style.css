@@ -341,13 +341,21 @@ ul {
   background: var(--clr-marker-2);
 }
 
-.schedule .colloquium .title {
-  font-weight: bold;
-}
-.schedule .abstract {
-  font-size: 90%;
+.schedule .speaker {
+    font-weight: bold;
+    padding-bottom: 0.5ex;
 }
 
+.schedule .colloquium .title {
+    font-weight: bold;
+    padding-bottom: 0.5ex;
+    color: var(--clr-accent-2);
+}
+.schedule .abstract {
+    font-size: 90%;
+    padding-top:0.5ex;
+    padding-below:0.5ex;
+}
 
 
 
