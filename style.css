@@ -359,12 +359,14 @@ ul {
 }
 
 .compact-schedule table {
-  margin: auto;
+    margin: auto;
+    border-spacing:0;
 }
 
 .compact-schedule th, .compact-schedule td {
   padding: var(--size-200);
   background: var(--clr-neutral-200);
+  border: 1px white solid;
 }
 
 .compact-schedule tr>th:first-child,.compact-schedule tr>td:first-child {
@@ -394,6 +396,7 @@ a.btn {
   font-weight: bold;
   padding: 10px;
   margin-top: 10px;
+  margin-bottom:20px;
   border-radius: 10px;
   display: inline-block;
 }
