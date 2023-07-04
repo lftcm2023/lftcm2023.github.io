@@ -165,6 +165,7 @@ h1 {
   font-size: var(--fs-primary-heading);
   color: var(--clr-accent-2);
   line-height: 1.1;
+  padding-bottom:0.5ex;
 }
 
 h2 {
