@@ -347,3 +347,53 @@ ul {
 .schedule .abstract {
   font-size: 90%;
 }
+
+
+
+
+/* compact schedule */
+
+.compact-schedule {
+  overflow-x: auto;
+  width: 100%;
+}
+
+.compact-schedule table {
+  margin: auto;
+}
+
+.compact-schedule th, .compact-schedule td {
+  padding: var(--size-200);
+  background: var(--clr-neutral-200);
+}
+
+.compact-schedule tr>th:first-child,.compact-schedule tr>td:first-child {
+  position: sticky;
+  left: 0;
+}
+
+.compact-schedule thead th {
+  background: white;
+}
+
+.compact-schedule tr td, .compact-schedule tr th{
+  background: var(--clr-neutral-200);
+}
+
+.compact-schedule tr td:empty {
+  background: none;
+}
+
+
+/* buttons */
+
+a.btn {
+  background:  var(--clr-accent-2);
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+  display: inline-block;
+}
