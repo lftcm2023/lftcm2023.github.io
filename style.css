@@ -160,6 +160,10 @@ body {
   color: var(--clr-neutral-800);
 }
 
+hgroup {
+    padding-bottom:1ex;
+}
+
 h1 {
   font-weight: var(--fw-bold);
   font-size: var(--fs-primary-heading);
@@ -180,7 +184,7 @@ h3 {
   font-weight: var(--fw-bold);
   color: var(--clr-accent-2);
   line-height: 1.1;
-  margin-bottom:0.2em;
+  padding-top:1ex;
 }
 
 p.h2
