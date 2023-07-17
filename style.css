@@ -12,6 +12,9 @@
   --clr-marker-2:hsla(356, 83%, 41%, 0.096);
   --clr-marker-3:hsla(51, 83%, 41%, 0.1);
 
+  --clr-stamp-red:hsl(356, 83%, 41%);
+  --clr-stamp-green:hsl(211, 100%, 40%);
+  
   --ff-primary: 'Be Vietnam Pro', sans-serif;
   --ff-body: var(--ff-primary);
   --ff-heading: var(--ff-primary);
@@ -161,7 +164,7 @@ body {
 }
 
 hgroup {
-    padding-bottom:1ex;
+    padding-top:1ex;
 }
 
 h1 {
@@ -413,8 +416,38 @@ a.btn {
   text-decoration: none;
   font-weight: bold;
   padding: 10px;
-  margin-top: 10px;
-  margin-bottom:20px;
+  margin-top: 5px;
+  margin-bottom:5px;
   border-radius: 10px;
+  display: inline-block;
+}
+
+/* stamps */
+
+a.red-stamp {
+  color: var(--clr-stamp-red);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom:5px;
+  border-radius: 10px;
+  border-style:dashed;
+  border-width:1px;
+  border-color: var(--clr-stamp-red);
+  display: inline-block;
+}
+
+a.green-stamp {
+  color: var(--clr-stamp-green);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom:5px;
+  border-radius: 10px;
+  border-style:dashed;
+  border-width:1px;
+  border-color: var(--clr-stamp-green);
   display: inline-block;
 }
