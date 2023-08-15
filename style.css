@@ -389,8 +389,19 @@ ul {
 }
 
 .schedule .speaker {
-    font-weight: bold;
-    padding-bottom: 0.5ex;
+  font-weight: bold;
+  padding-bottom: 0.5ex;
+}
+
+.tutorial-schedule .speaker {
+  font-size: 0.9em;
+  font-weight: normal;
+  padding-bottom: 0;
+}
+
+.tutorial-schedule .title {
+  font-weight: bold;
+  padding-bottom: 0;
 }
 
 .schedule .colloquium .title {
