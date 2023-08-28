@@ -405,7 +405,19 @@ ul {
   padding-bottom: 0.5ex;
 }
 
+.schedule .video {
+    font-size: 0.9em;
+    padding-top:0.5ex;
+    padding-bottom:0.5ex;
+}
+
 .tutorial-schedule .speaker {
+  font-size: 0.9em;
+  font-weight: normal;
+  padding-bottom: 0;
+}
+
+.tutorial-schedule .video {
   font-size: 0.9em;
   font-weight: normal;
   padding-bottom: 0;
