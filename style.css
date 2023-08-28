@@ -198,6 +198,18 @@ p.h2
   margin-bottom:0.5em;
 }
 
+body {
+    display: flex;
+    -ms-flex-direction: column;
+    -moz-flex-direction: column;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+}
+
+main {
+    flex-grow:1;
+}
+
 section {
   margin-top: var(--size-800);
 }
