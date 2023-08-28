@@ -428,7 +428,11 @@ ul {
 }
 
 
+/* red record symbol in navigation */
 
+.record {
+    color: var(--clr-accent-2);
+}
 
 
 /* buttons */
@@ -474,3 +478,4 @@ a.green-stamp {
   border-color: var(--clr-stamp-green);
   display: inline-block;
 }
+
