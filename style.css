@@ -443,7 +443,7 @@ ul {
 /* red record symbol in navigation */
 
 .record {
-    background: var(--clr-accent-2);
+    background: hsl(0, 0%, 40%); /*-- var(--clr-accent-2)*/
      border-radius: 50%;
      display: inline-block;
      height: 0.9em;
